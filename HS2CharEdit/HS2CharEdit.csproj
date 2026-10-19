@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <AssemblyVersion>0.1</AssemblyVersion>
+    <FileVersion>0.1</FileVersion>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dictionary.ico" />
+    <None Remove="imagefile.ico" />
+    <None Remove="load.ico" />
+    <None Remove="loadfile.ico" />
+    <None Remove="loadfile.png" />
+    <None Remove="revert.ico" />
+    <None Remove="save.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="E:\Illusion\Honey Select 2 DX\UserData\chara\female\WIP\app\icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <PackageReference Include="Octokit" Version="0.51.0" />
+    <Resource Include="dictionary.ico" />
+    <Resource Include="imagefile.ico" />
+    <Resource Include="revert.ico" />
+    <Resource Include="loadfile.ico" />
+    <Resource Include="save.ico" />
+  </ItemGroup>
+
+</Project>

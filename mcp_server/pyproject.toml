@@ -1,0 +1,14 @@
+[project]
+name = "charedit-mcp"
+version = "0.1.0"
+description = "MCP Server companion for CharEdit card editor"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=3.4.3",
+    "mcp>=1.28.1",
+    "httpx>=0.25.0",
+]
+
+[project.scripts]
+charedit-mcp = "server:main"

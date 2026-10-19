@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "CharEdit": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "mcp_server",
+        "run",
+        "server.py"
+      ]
+    }
+  }
+}
